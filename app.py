@@ -39,18 +39,25 @@ def main():
                     # Cálculo da média
                     media = sum(lista) / int_variaveis
 
-                    # Passo 1: Subtraindo a média de cada valor
-                    lista_sub = [x - media for x in lista]
+                    # passo 01
+                    for i in range(int(variaveis)):
+                        entrar = lista[i]
+                        subtrair = entrar - media
+                        lista_sub.append(subtrair)
 
-                    # Passo 2: Elevando ao quadrado o desvio
-                    lista_pot = [sub ** 2 for sub in lista_sub]
+                    # passo 02
+                    for i in range(int(variaveis)):
+                        entrar_1 = lista_sub[i]
+                        elevar = entrar_1**2
+                        lista_pot.append(elevar)
 
-                    # Cálculo da variância e desvio padrão
-                    variancia = sum(lista_pot) / (int_variaveis - 1)
-                    desvio_pd = variancia ** 0.5
+                    # variância
+                    valor_med = int(variaveis) - 1
+                    variancia = sum(lista_pot) / valor_med
 
-                    # Exibindo os resultados
-                    st.write(f'A variância é igual a: {variancia:.3f}')
+                    # desvio padrão
+                    desvio_pd = variancia**0.5
+                    st.write(f'\nA variância é igual a: {variancia:.3f}')
                     st.write(f'O desvio padrão é igual a: {desvio_pd:.3f}')
                     
                     # Exibindo a tabela de dados
