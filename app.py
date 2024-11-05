@@ -15,9 +15,7 @@ def main():
 
     #medidas
     variaveis = st.text_input('Quantos valores você deseja calcular? ')
-
-    st.button('Enviar')
-
+    
     #trasforma o input em int
     try:
         if variaveis:
@@ -30,7 +28,6 @@ def main():
                     int_valor = float(valor)
                     lista.append(int_valor)
             #st.button('Resetar', type="primary")
-            st.button('Calcular')
 
             #média
             if len(lista) == int_variaveis:
