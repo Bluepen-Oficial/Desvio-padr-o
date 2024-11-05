@@ -19,7 +19,7 @@ def main():
     #trasforma o input em int
     try:
         with st.form(key='valores'):
-                for i in range(int(variaveis)):
+            for i in range(int(variaveis)):
                 valor = st.number_input(f'Informe o {i+1}° valor: ', key=f'valor_{i}')
 
                 if valor:
