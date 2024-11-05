@@ -31,8 +31,8 @@ def main():
         if calcular:
             if len(lista) == int_variaveis:
                 media = sum(lista) / int_variaveis
-                #st.write(media)
-                #st.write(variaveis)
+                st.write(media)
+                st.write(variaveis)
 
                 #passo 01
                 for i in range(int_variaveis):
