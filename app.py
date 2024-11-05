@@ -18,18 +18,17 @@ def main():
     
     #trasforma o input em int
     try:
-        if variaveis:
-            int_variaveis = int(variaveis)
-
-            for i in range(int_variaveis):
-                valor = st.text_input(f'Informe o {i+1}° valor: ')
+        with st.form(key='valores'):
+                for i in range(int(variaveis)):
+                valor = st.number_input(f'Informe o {i+1}° valor: ', key=f'valor_{i}')
 
                 if valor:
                     int_valor = float(valor)
                     lista.append(int_valor)
             #st.button('Resetar', type="primary")
-
+        calcular = st.form_submit_button('Calcular')
             #média
+        if calcular:
             if len(lista) == int_variaveis:
                 media = sum(lista) / int_variaveis
                 #st.write(media)
