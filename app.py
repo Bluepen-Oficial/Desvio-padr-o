@@ -24,7 +24,7 @@ def main():
             with st.form(key='valores'):
                 # Entrada de valores individuais
                 for i in range(int_variaveis):
-                    valor = st.number_input(f'Informe o {i+1}° valor: ', key=f'valor_{i}')
+                    valor = st.number_input(f'Informe o {i+1}° valor: ', value=None, key=f'valor_{i}')
                     
                     # Adiciona apenas se o valor for fornecido
                     if valor:
