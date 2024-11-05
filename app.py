@@ -26,7 +26,7 @@ def main():
                     int_valor = float(valor)
                     lista.append(int_valor)
             #st.button('Resetar', type="primary")
-        calcular = st.form_submit_button('Calcular')
+            calcular = st.form_submit_button('Calcular')
             #média
         if calcular:
             if len(lista) == int_variaveis:
