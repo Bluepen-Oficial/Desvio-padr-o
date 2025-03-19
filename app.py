@@ -73,7 +73,6 @@ def main():
                     df_trns = df.T
                     df_trns.columns = [f"valor {i+1}" for i in range(int_variaveis)]
                     st.dataframe(df_trns)
-limpar = st.button('Calcular')
 
         except ValueError:
             st.error('Por favor, insira um número inteiro válido para a quantidade de valores.')
