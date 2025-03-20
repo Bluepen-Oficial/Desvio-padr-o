@@ -12,6 +12,9 @@ def main():
     lista_sub = []
     lista_pot = []
 
+    # Variável de controle para o reset
+    reset = False
+
     # Solicita a quantidade de valores
     variaveis = st.text_input('Quantos valores você deseja calcular? ')
     
@@ -73,6 +76,14 @@ def main():
                     df_trns = df.T
                     df_trns.columns = [f"valor {i+1}" for i in range(int_variaveis)]
                     st.dataframe(df_trns)
+
+            # Botão de reset
+            if st.button('Resetar'):
+                lista.clear()
+                lista_sub.clear()
+                lista_pot.clear()
+                reset = True
+                st.experimental_rerun()  # Força o reinício do script
 
         except ValueError:
             st.error('Por favor, insira um número inteiro válido para a quantidade de valores.')
