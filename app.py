@@ -79,6 +79,7 @@ def main():
 
             # Botão de reset
             if st.button('Resetar'):
+                variaveis = ''  
                 lista.clear()
                 lista_sub.clear()
                 lista_pot.clear()
