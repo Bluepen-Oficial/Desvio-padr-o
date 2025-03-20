@@ -82,7 +82,8 @@ def main():
                 lista.clear()
                 lista_sub.clear()
                 lista_pot.clear()
-                valor.clear()
+                variaveis.clear()
+                int_variaveis.clear()
                 reset = True
 
         except ValueError:
