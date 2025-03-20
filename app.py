@@ -82,6 +82,7 @@ def main():
                 lista.clear()
                 lista_sub.clear()
                 lista_pot.clear()
+                valor.clear()
                 reset = True
 
         except ValueError:
