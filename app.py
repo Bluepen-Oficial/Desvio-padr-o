@@ -83,7 +83,6 @@ def main():
                 lista_sub.clear()
                 lista_pot.clear()
                 reset = True
-                st.experimental_rerun()  # Força o reinício do script
 
         except ValueError:
             st.error('Por favor, insira um número inteiro válido para a quantidade de valores.')
