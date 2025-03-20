@@ -82,7 +82,6 @@ def main():
                 lista.clear()
                 lista_sub.clear()
                 lista_pot.clear()
-                variaveis.clear()
                 int_variaveis.clear()
                 reset = True
 
